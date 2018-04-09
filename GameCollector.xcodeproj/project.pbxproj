@@ -14,6 +14,7 @@
 		45F6DBC7207C16E5007AC09C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45F6DBC6207C16E5007AC09C /* Assets.xcassets */; };
 		45F6DBCA207C16E5007AC09C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F6DBC8207C16E5007AC09C /* LaunchScreen.storyboard */; };
 		45F6DBD5207C16E5007AC09C /* GameCollectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F6DBD4207C16E5007AC09C /* GameCollectorTests.swift */; };
+		45F6DBE0207C298D007AC09C /* carro-tunado.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45F6DBDF207C298C007AC09C /* carro-tunado.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		45F6DBD0207C16E5007AC09C /* GameCollectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameCollectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F6DBD4207C16E5007AC09C /* GameCollectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCollectorTests.swift; sourceTree = "<group>"; };
 		45F6DBD6207C16E5007AC09C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45F6DBDF207C298C007AC09C /* carro-tunado.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "carro-tunado.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				45F6DBBC207C16E0007AC09C /* AppDelegate.swift */,
 				45F6DBBE207C16E0007AC09C /* ViewController.swift */,
 				45F6DBC0207C16E0007AC09C /* Main.storyboard */,
+				45F6DBDF207C298C007AC09C /* carro-tunado.jpg */,
 				45F6DBC6207C16E5007AC09C /* Assets.xcassets */,
 				45F6DBC8207C16E5007AC09C /* LaunchScreen.storyboard */,
 				45F6DBCB207C16E5007AC09C /* Info.plist */,
@@ -182,6 +185,7 @@
 			files = (
 				45F6DBCA207C16E5007AC09C /* LaunchScreen.storyboard in Resources */,
 				45F6DBC7207C16E5007AC09C /* Assets.xcassets in Resources */,
+				45F6DBE0207C298D007AC09C /* carro-tunado.jpg in Resources */,
 				45F6DBC2207C16E0007AC09C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

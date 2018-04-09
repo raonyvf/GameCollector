@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PPj-H9-H8h">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,94 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GameCollector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="BcV-79-5IG">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Adg-vH-0eQ">
+                            <connections>
+                                <segue destination="z8p-vP-YeM" kind="show" identifier="" id="StQ-Ig-g8w"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="840.79999999999995" y="118.29085457271366"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="oZm-Ql-r9o">
+            <objects>
+                <viewController id="z8p-vP-YeM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ai0-Ma-zIY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carro-tunado.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UuP-tP-h0P">
+                                <rect key="frame" x="47" y="84" width="280" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="eaq-J6-HfN"/>
+                                    <constraint firstAttribute="width" constant="280" id="oga-95-zTc"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rLn-2E-IQi">
+                                <rect key="frame" x="47.5" y="318" width="280" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRr-D3-VPH">
+                                <rect key="frame" x="172" y="381" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rLn-2E-IQi" firstAttribute="centerX" secondItem="Ai0-Ma-zIY" secondAttribute="centerX" id="Jso-O9-lC1"/>
+                            <constraint firstItem="UuP-tP-h0P" firstAttribute="top" secondItem="DAQ-2Z-vhT" secondAttribute="top" constant="20" id="LbN-h0-y06"/>
+                            <constraint firstItem="rLn-2E-IQi" firstAttribute="top" secondItem="UuP-tP-h0P" secondAttribute="bottom" constant="34" id="Nnw-rG-9Bn"/>
+                            <constraint firstItem="CRr-D3-VPH" firstAttribute="centerX" secondItem="Ai0-Ma-zIY" secondAttribute="centerX" id="hEe-3U-P10"/>
+                            <constraint firstItem="UuP-tP-h0P" firstAttribute="centerX" secondItem="Ai0-Ma-zIY" secondAttribute="centerX" id="q1s-df-AVY"/>
+                            <constraint firstItem="CRr-D3-VPH" firstAttribute="top" secondItem="rLn-2E-IQi" secondAttribute="bottom" constant="33" id="uj1-iJ-ECH"/>
+                            <constraint firstItem="rLn-2E-IQi" firstAttribute="width" secondItem="UuP-tP-h0P" secondAttribute="width" id="vX9-fJ-W0i"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DAQ-2Z-vhT"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="eW5-gg-ctR">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="MuF-dM-3oU"/>
+                            <barButtonItem title="Photo" id="zyU-ig-sGH"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aiE-zW-2Gc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1556" y="117"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lU3-0U-19I">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PPj-H9-H8h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oOF-rt-RGb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wnI-KD-tXo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="thV-aG-t6m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="118"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="carro-tunado.jpg" width="780" height="439"/>
+    </resources>
 </document>
