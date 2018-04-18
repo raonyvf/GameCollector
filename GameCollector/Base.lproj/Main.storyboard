@@ -18,7 +18,19 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gkg-Eg-s8P">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gkg-Eg-s8P" secondAttribute="bottom" id="3oB-v0-ORL"/>
+                            <constraint firstItem="Gkg-Eg-s8P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HSh-Zc-GZL"/>
+                            <constraint firstItem="Gkg-Eg-s8P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hob-tU-UTz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gkg-Eg-s8P" secondAttribute="trailing" id="rwY-4S-AVN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="BcV-79-5IG">
@@ -28,6 +40,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Gkg-Eg-s8P" id="qH5-4l-F1C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,7 +51,7 @@
         <!--Title-->
         <scene sceneID="oZm-Ql-r9o">
             <objects>
-                <viewController id="z8p-vP-YeM" sceneMemberID="viewController">
+                <viewController id="z8p-vP-YeM" customClass="GameViewController" customModule="GameCollector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ai0-Ma-zIY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,6 +72,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRr-D3-VPH">
                                 <rect key="frame" x="172" y="381" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="z8p-vP-YeM" eventType="touchUpInside" id="Nog-v4-wue"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -73,10 +91,22 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="eW5-gg-ctR">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="camera" id="MuF-dM-3oU"/>
-                            <barButtonItem title="Photo" id="zyU-ig-sGH"/>
+                            <barButtonItem systemItem="camera" id="MuF-dM-3oU">
+                                <connections>
+                                    <action selector="cameraTapped:" destination="z8p-vP-YeM" id="JHq-QM-qvn"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Photo" id="zyU-ig-sGH">
+                                <connections>
+                                    <action selector="photosTapped:" destination="z8p-vP-YeM" id="5GZ-Zk-lMw"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="gameImageView" destination="UuP-tP-h0P" id="QCV-pS-hq6"/>
+                        <outlet property="titleTextField" destination="rLn-2E-IQi" id="9cm-rT-v4p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aiE-zW-2Gc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45880FC5207D808000147D30 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45880FC4207D808000147D30 /* GameViewController.swift */; };
 		45F6DBBD207C16E0007AC09C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F6DBBC207C16E0007AC09C /* AppDelegate.swift */; };
 		45F6DBBF207C16E0007AC09C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F6DBBE207C16E0007AC09C /* ViewController.swift */; };
 		45F6DBC2207C16E0007AC09C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F6DBC0207C16E0007AC09C /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45880FC4207D808000147D30 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		45F6DBB9207C16E0007AC09C /* GameCollector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameCollector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F6DBBC207C16E0007AC09C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45F6DBBE207C16E0007AC09C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			children = (
 				45F6DBBC207C16E0007AC09C /* AppDelegate.swift */,
 				45F6DBBE207C16E0007AC09C /* ViewController.swift */,
+				45880FC4207D808000147D30 /* GameViewController.swift */,
 				45F6DBC0207C16E0007AC09C /* Main.storyboard */,
 				45F6DBDF207C298C007AC09C /* carro-tunado.jpg */,
 				45F6DBC6207C16E5007AC09C /* Assets.xcassets */,
@@ -204,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45880FC5207D808000147D30 /* GameViewController.swift in Sources */,
 				45F6DBC5207C16E0007AC09C /* GameCollector.xcdatamodeld in Sources */,
 				45F6DBBF207C16E0007AC09C /* ViewController.swift in Sources */,
 				45F6DBBD207C16E0007AC09C /* AppDelegate.swift in Sources */,
